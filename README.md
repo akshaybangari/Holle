@@ -30,7 +30,8 @@
       margin-bottom: 20px;
     }
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       padding: 12px 24px;
       border-radius: 5px;
       text-decoration: none;
@@ -42,6 +43,11 @@
     }
     .btn:hover {
       transform: scale(1.1);
+    }
+    .btn img {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
     }
     /* Product Section */
     .product-section {
@@ -84,6 +90,10 @@
     .product-card p {
       font-size: 16px;
       color: #EF4444;
+    }
+    .product-card .btn {
+      margin-top: 10px;
+      font-size: 14px;
     }
     /* Progress Bar */
     .progress-bar {
@@ -162,7 +172,7 @@
   <div class="hero">
     <h1>Holle: Limited Edition T-Shirts</h1>
     <p>Discover the exclusive Holle T-shirt collection – only 100 pieces available this month!</p>
-    <a href="#buy-now" class="btn">Shop Now</a>
+    <a href="https://wa.me/917889240438?text=Hi%20Holle%2C%20I%27d%20like%20to%20buy%20a%20T-shirt%21%20Can%20you%20help%20me%20with%20my%20order%3F" class="btn">Shop Now <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
   </div>
   <!-- Product Section -->
   <div class="product-section">
@@ -172,22 +182,25 @@
         <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=150&fit=crop" alt="Holle Classic Tee">
         <h3>Holle Classic Tee</h3>
         <p>$25</p>
+        <a href="https://wa.me/917889240438?text=Hi%20Holle%2C%20I%27d%20like%20to%20buy%20the%20Holle%20Classic%20Tee%20for%20%2425.%20Can%20you%20help%20me%20with%20my%20order%3F" class="btn">Buy Now <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
       </div>
       <div class="product-card">
         <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=200&h=150&fit=crop" alt="Holle Graphic Tee">
         <h3>Holle Graphic Tee</h3>
         <p>$30</p>
+        <a href="https://wa.me/917889240438?text=Hi%20Holle%2C%20I%27d%20like%20to%20buy%20the%20Holle%20Graphic%20Tee%20for%20%2430.%20Can%20you%20help%20me%20with%20my%20order%3F" class="btn">Buy Now <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
       </div>
       <div class="product-card">
         <img src="https://images.unsplash.com/photo-1594032194509-095602d7e0d6?w=200&h=150&fit=crop" alt="Holle Retro Tee">
         <h3>Holle Retro Tee</h3>
         <p>$28</p>
+        <a href="https://wa.me/917889240438?text=Hi%20Holle%2C%20I%27d%20like%20to%20buy%20the%20Holle%20Retro%20Tee%20for%20%2428.%20Can%20you%20help%20me%20with%20my%20order%3F" class="btn">Buy Now <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
       </div>
     </div>
     <div class="progress-bar">
       <div class="progress">70% Sold Out – Hurry!</div>
     </div>
-    <a href="#buy-now" id="buy-now" class="btn">Buy Now</a>
+    <a href="https://wa.me/917889240438?text=Hi%20Holle%2C%20I%27d%20like%20to%20buy%20a%20T-shirt%21%20Can%20you%20help%20me%20with%20my%20order%3F" id="buy-now" class="btn">Buy Now <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
   </div>
   <!-- Social Proof -->
   <div class="social-proof">
