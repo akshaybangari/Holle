@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Lato', sans-serif; background: #FFFFFF; line-height: 1.6; }
+    body { font-family: 'Lato', sans-serif; background: #FFFFFF; line-height: 1.8; }
     /* Header Section */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 30px;
       background: #F9FAFB;
     }
     .header .logo img {
@@ -25,59 +25,61 @@
       text-align: right;
     }
     .cart p {
-      font-size: 14px;
+      font-size: 16px;
       color: #666;
     }
     /* Filter Section */
     .filter-section {
-      padding: 20px;
+      padding: 30px;
       background: #F9FAFB;
       text-align: center;
     }
     .filter-section h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 24px;
+      font-size: 28px;
       color: #1E3A8A;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .filter-section .item-count {
-      font-size: 16px;
+      font-size: 18px;
       color: #666;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .filter-section .colors {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 15px;
     }
     .filter-section .color {
-      padding: 5px 10px;
+      padding: 8px 15px;
       border: 1px solid #E5E7EB;
       border-radius: 5px;
-      font-size: 14px;
+      font-size: 16px;
       cursor: pointer;
+      transition: background 0.3s, color 0.3s;
     }
     .filter-section .color:hover {
       background: #F59E0B;
       color: white;
+      transform: scale(1.05);
     }
     /* Main Content */
     .main-content {
-      padding: 50px 20px;
+      padding: 60px 30px;
       text-align: center;
     }
     .main-content h1 {
       font-family: 'Poppins', sans-serif;
-      font-size: 32px;
+      font-size: 36px;
       color: #1E3A8A;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .main-content .read-more {
-      font-size: 16px;
+      font-size: 18px;
       color: #F59E0B;
       text-decoration: none;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       display: inline-block;
     }
     .main-content .read-more:hover {
@@ -85,147 +87,151 @@
     }
     .main-content h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       color: #1E3A8A;
-      margin: 40px 0 20px;
+      margin: 50px 0 25px;
     }
     .main-content p {
-      font-size: 16px;
+      font-size: 18px;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .main-content .sub-section {
-      margin: 30px 0;
+      margin: 40px 0;
     }
     .main-content .sub-section h3 {
       font-family: 'Poppins', sans-serif;
-      font-size: 20px;
+      font-size: 24px;
       color: #1E3A8A;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .main-content .sub-section ul {
       list-style: none;
       padding: 0;
     }
     .main-content .sub-section ul li {
-      font-size: 16px;
+      font-size: 18px;
       color: #333;
-      margin: 10px 0;
+      margin: 15px 0;
     }
     .main-content .product-card {
       background: #F9FAFB;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
-      margin: 20px auto;
-      max-width: 300px;
+      margin: 25px auto;
+      max-width: 350px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .main-content .product-card img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
+      background: #E5E7EB; /* Fallback color if image fails to load */
     }
     .main-content .product-card h3 {
       font-family: 'Poppins', sans-serif;
-      font-size: 18px;
-      margin: 10px 0;
+      font-size: 20px;
+      margin: 15px 0;
     }
     .main-content .product-card p {
-      font-size: 16px;
+      font-size: 18px;
       color: #EF4444;
     }
     .main-content .product-card .pro-tip {
-      font-size: 14px;
+      font-size: 16px;
       color: #666;
-      margin: 10px 0;
+      margin: 15px 0;
     }
     .main-content .product-card select {
       width: 100%;
-      padding: 5px;
-      margin: 10px 0;
+      padding: 8px;
+      margin: 15px 0;
       border-radius: 5px;
       border: 1px solid #E5E7EB;
       font-family: 'Lato', sans-serif;
+      font-size: 16px;
     }
     .main-content .product-card .btn {
       display: inline-flex;
       align-items: center;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 5px;
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       background: #F59E0B;
       color: white;
-      transition: transform 0.2s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .main-content .product-card .btn:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .main-content .product-card .btn img {
       width: 20px;
       height: 20px;
-      margin-left: 8px;
+      margin-left: 10px;
     }
     /* Why Shop Section */
     .why-shop {
-      padding: 50px 20px;
+      padding: 60px 30px;
       background: #F9FAFB;
       text-align: center;
     }
     .why-shop h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       color: #1E3A8A;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .why-shop ul {
       list-style: none;
       padding: 0;
     }
     .why-shop ul li {
-      font-size: 16px;
+      font-size: 18px;
       color: #333;
-      margin: 10px 0;
+      margin: 15px 0;
     }
     /* Call to Action */
     .cta {
-      padding: 50px 20px;
+      padding: 60px 30px;
       text-align: center;
     }
     .cta h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       color: #1E3A8A;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     /* FAQ Section */
     .faq {
-      padding: 50px 20px;
+      padding: 60px 30px;
       background: #F9FAFB;
       text-align: center;
     }
     .faq h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: 28px;
+      font-size: 32px;
       color: #1E3A8A;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .faq .question {
-      margin: 20px 0;
+      margin: 25px 0;
     }
     .faq .question h3 {
       font-family: 'Poppins', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       color: #1E3A8A;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     /* Footer */
     .footer {
       background: #1E3A8A;
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
     }
     .footer a {
@@ -237,7 +243,7 @@
       text-decoration: underline;
     }
     .qr-code {
-      margin-top: 20px;
+      margin-top: 25px;
     }
     .qr-code img {
       max-width: 150px;
@@ -245,15 +251,15 @@
     }
     /* Responsive */
     @media (max-width: 600px) {
-      .header { flex-direction: column; text-align: center; }
-      .header .logo img { margin-bottom: 10px; }
-      .main-content { padding: 30px 10px; }
-      .main-content h1 { font-size: 24px; }
-      .main-content h2 { font-size: 20px; }
-      .main-content .sub-section h3 { font-size: 18px; }
+      .header { flex-direction: column; text-align: center; padding: 20px; }
+      .header .logo img { margin-bottom: 15px; }
+      .main-content { padding: 40px 15px; }
+      .main-content h1 { font-size: 28px; }
+      .main-content h2 { font-size: 24px; }
+      .main-content .sub-section h3 { font-size: 20px; }
       .product-card { max-width: 100%; }
-      .why-shop, .cta, .faq { padding: 30px 10px; }
-      .why-shop h2, .cta h2, .faq h2 { font-size: 20px; }
+      .why-shop, .cta, .faq { padding: 40px 15px; }
+      .why-shop h2, .cta h2, .faq h2 { font-size: 24px; }
     }
   </style>
 </head>
