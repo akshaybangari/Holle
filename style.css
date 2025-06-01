@@ -1,0 +1,179 @@
+:root {
+  --navy: #1e2a38;
+  --beige: #f5f3ef;
+  --accent: #ff6f3c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--beige);
+  color: var(--navy);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.menu a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1600x800') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content .btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.product-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.carousel-section {
+  padding: 2rem;
+  background: white;
+  text-align: center;
+}
+
+.carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-track img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.testimonials {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial {
+  background: white;
+  padding: 1rem;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  background: var(--navy);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer input[type="email"] {
+  padding: 0.5rem;
+  width: 200px;
+  margin-top: 0.5rem;
+}
+
+.footer button {
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.footer-links {
+  margin-top: 1.5rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  margin: 0 0.5rem;
+}
